@@ -94,6 +94,8 @@ class Physics:
     def right(self): return self.x+self.w/2
     def up(self): return self.y+self.h/2
     def down(self): return self.y-self.h/2
+    def getRect(self): return pygame.Rect(self.x, self.y, self.w, self.h)
+    
 
     def draw(self):
         self.erase()
@@ -233,7 +235,7 @@ def update():
     dirty_rect = []
     for r in objList:
         r.draw()
-        dirty_rect.append(r.rect)
+        dirty_rect.append(r.getRect())
     if len(dirty_rect) > 0: 
         pygame.display.update(dirty_rect) # Atualiza todos os objetos da janela
     else:
@@ -248,7 +250,6 @@ def loop():
     global pwr
     global ang
     screen.blit(background_image, [0,0])
-    screen.blit(image, [0,0])
     for event in pygame.event.get():
 
         #  print event values, helps implementing new key entries
@@ -269,11 +270,14 @@ def loop():
         if pressed[pygame.K_RIGHT] and ang > 0: ang -=5
         print("Power: {:3d} Angle: {:3d}".format(pwr, ang), end="\r")
 
-    update()
+    # update()
+    for r in objList: r.draw()
+    pygame.display.update()
     clock.tick(120) # FPS - frames per second
 
     return True
 
+objList.remove(eixoy)
 while loop(): 
     pass
 
