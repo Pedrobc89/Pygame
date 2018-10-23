@@ -1,0 +1,53 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Physics	../testgame.py	/^class Physics:$/;"	kind:class	line:56
+Rectao	../testgame.py	/^class Rectao(Physics):$/;"	kind:class	line:87
+__init__	../testgame.py	/^    def  __init__(self, x, y, w, h, color, movable = True):$/;"	kind:member	line:88
+__init__	../testgame.py	/^    def __init__(self):$/;"	kind:member	line:57
+bolax	../testgame.py	/^bolax = Rectao(0,0, 4, 4, (255,0,0))$/;"	kind:variable	line:114
+bolay	../testgame.py	/^bolay = Rectao(0,0, 4, 4, (255,0,0))$/;"	kind:variable	line:115
+chao	../testgame.py	/^chao = Rectao(0, -250, 800, 50, (255, 255, 255), False)$/;"	kind:variable	line:111
+clock	../game2.py	/^clock = pygame.time.Clock()$/;"	kind:variable	line:10
+clock	../testgame.py	/^clock = pygame.time.Clock()$/;"	kind:variable	line:40
+color	../testgame.py	/^color = (0, 128, 255)$/;"	kind:variable	line:47
+coords	../testgame.py	/^    def coords(self):$/;"	kind:member	line:68
+crashed	../testgame.py	/^crashed = False$/;"	kind:variable	line:45
+done	../game2.py	/^                        done = True$/;"	kind:variable	line:15
+done	../game2.py	/^done = False$/;"	kind:variable	line:5
+draw	../testgame.py	/^    def draw(self):$/;"	kind:member	line:80
+eixox	../testgame.py	/^eixox = Rectao(0,0, 800, 4, (255,255,255), False)$/;"	kind:variable	line:112
+eixoy	../testgame.py	/^eixoy = Rectao(0,0, 4, 600, (255,255,255), False)$/;"	kind:variable	line:113
+f1	../testgame.py	/^def f1(x):$/;"	kind:function	line:100
+f2	../testgame.py	/^def f2(x):$/;"	kind:function	line:104
+forward	../testgame.py	/^forward = True$/;"	kind:variable	line:117
+fps_measure	../testgame.py	/^def fps_measure(func):$/;"	kind:function	line:7
+g	../testgame.py	/^g = .9 # gravity$/;"	kind:variable	line:51
+game2.py	../game2.py	1;"	kind:file	line:1
+image	../testgame.py	/^image = pygame.image.load('Space-Cannon-Assets\/Ball@2x.png')$/;"	kind:variable	line:38
+isOut	../testgame.py	/^    def isOut(self):$/;"	kind:member	line:72
+is_blue	../game2.py	/^                        is_blue = not is_blue$/;"	kind:variable	line:17
+is_blue	../game2.py	/^is_blue = True$/;"	kind:variable	line:6
+jumps	../testgame.py	/^jumps = 2$/;"	kind:variable	line:52
+loop	../testgame.py	/^def loop():$/;"	kind:function	line:120
+mean_fps	../testgame.py	/^mean_fps = 0$/;"	kind:variable	line:4
+move	../testgame.py	/^    def move(self, x, y):$/;"	kind:member	line:84
+num	../testgame.py	/^num = 1$/;"	kind:variable	line:5
+objList	../testgame.py	/^objList = []$/;"	kind:variable	line:53
+ping	../testgame.py	/^ping  = Rectao(-200,-150,10,10, (0,255,255))$/;"	kind:variable	line:110
+pressed	../game2.py	/^        pressed = pygame.key.get_pressed()$/;"	kind:variable	line:19
+pygame	../game2.py	/^import pygame$/;"	kind:namespace	line:1
+pygame	../testgame.py	/^import pygame$/;"	kind:namespace	line:2
+rectList	../testgame.py	/^rectList = []$/;"	kind:variable	line:54
+screen	../game2.py	/^screen = pygame.display.set_mode((400, 300))$/;"	kind:variable	line:4
+screen	../testgame.py	/^screen = pygame.display.set_mode((800, 600))$/;"	kind:variable	line:35
+testgame.py	../testgame.py	1;"	kind:file	line:1
+time	../testgame.py	/^import time$/;"	kind:namespace	line:1
+time_usage	../testgame.py	/^def time_usage(func):$/;"	kind:function	line:22
+wrapper	../testgame.py	/^    def wrapper(*args, **kwargs):$/;"	kind:function	line:23
+wrapper	../testgame.py	/^    def wrapper(*args, **kwargs):$/;"	kind:function	line:8
+x	../game2.py	/^x = 30$/;"	kind:variable	line:7
+y	../game2.py	/^y = 30$/;"	kind:variable	line:8
