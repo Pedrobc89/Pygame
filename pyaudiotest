@@ -1,0 +1,15 @@
+import speech_recognition as sr
+print("oi")
+
+while True:
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        print("Say something")
+        audio = r.listen(source)
+    try:
+        print("You said: " + r.recognize_google(audio))
+    except sr.UnknownValueError:
+        print("que diabos vc tá falando meow")
+    escept sr.RequestError as e:
+        print("erro bizarro: {}".format(e))
+    time.sleep(2)

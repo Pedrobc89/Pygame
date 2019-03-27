@@ -63,13 +63,12 @@ g = .9 # gravity
 jumps = 2
 objList = []
 
-class Physics:
+class Physics(pygame.Rect):
     def __init__(self):
         self.ax = 0
         self.vx = 0
         self.ay = -gravity
         self.vy = 0
-        self.rect = pygame.Rect(self.x, self.y, self.w, self.h)
         objList.append(self)
         self.draw()
         pass
